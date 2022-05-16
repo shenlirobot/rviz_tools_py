@@ -956,6 +956,10 @@ class RvizMarkers(object):
         rect_pose.position.x = (rect_point1.x - rect_point2.x) / 2.0 + rect_point2.x
         rect_pose.position.y = (rect_point1.y - rect_point2.y) / 2.0 + rect_point2.y
         rect_pose.position.z = (rect_point1.z - rect_point2.z) / 2.0 + rect_point2.z
+        rect_pose.orientation.x = 0.
+        rect_pose.orientation.y = 0.
+        rect_pose.orientation.z = 0.
+        rect_pose.orientation.w = 1.
         rectangle_marker.pose = rect_pose
 
         # Calculate scale
